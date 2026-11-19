@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Joshua Ojabo — aspiring software engineer based in Gorleston, UK. Portfolio of software, web and game development projects."
+  />
+  <meta name="theme-color" content="#0c1017" />
+
+  <title>Joshua Ojabo — Software Engineer</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .project-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .project-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 42px;
+      padding: 0 14px;
+
+      border: 1px solid rgba(17, 19, 25, 0.14);
+      border-radius: 12px;
+
+      color: #111319;
+      background: transparent;
+
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .project-button:hover {
+      transform: translateY(-2px);
+      background: #ebe5dc;
+    }
+
+    .primary-project-button {
+      background: #111319;
+      color: #ffffff;
+      border-color: #111319;
+    }
+
+    .primary-project-button:hover {
+      background: #272a31;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Joshua Ojabo home">
+        <span class="brand-mark">JO</span>
+        <span>Joshua Ojabo</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+      </nav>
+
+      <a class="nav-cta" href="#contact">
+        Let's talk <span>↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <div class="availability">
+            <span class="pulse"></span>
+            Open to apprenticeships, internships & junior roles
+          </div>
+
+          <p class="eyebrow">
+            SOFTWARE ENGINEERING · GORLESTON, UK
+          </p>
+
+          <h1>
+            I build useful
+            <span class="accent-word">software.</span>
+          </h1>
+
+          <p class="hero-lead">
+            I'm Joshua — a software engineering student turning ideas into
+            practical web, Java, database and game-development projects.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore my work <span>↓</span>
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/joshojabs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span>↗</span>
+            </a>
+          </div>
+
+          <div class="quick-stats">
+            <div>
+              <strong>04+</strong>
+              <span>featured projects</span>
+            </div>
+
+            <div>
+              <strong>02</strong>
+              <span>hackathon placement</span>
+            </div>
+
+            <div>
+              <strong>06+</strong>
+              <span>core technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero-visual reveal delay-1"
+          aria-label="Developer profile visual"
+        >
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+
+          <div class="terminal-card">
+            <div class="terminal-top">
+              <div class="dots">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+
+              <span>portfolio.js</span>
+              <span>⌘ K</span>
+            </div>
+
+            <div class="terminal-body">
+              <div>
+                <span class="muted-code">01</span>
+                <span class="purple">const</span>
+                developer =
+                <span class="gold">"Joshua Ojabo"</span>;
+              </div>
+
+              <div>
+                <span class="muted-code">02</span>
+                <span class="purple">const</span>
+                focus = [
+              </div>
+
+              <div>
+                <span class="muted-code">03</span>
+                &nbsp;&nbsp;<span class="gold">"Software Engineering"</span>,
+              </div>
+
+              <div>
+                <span class="muted-code">04</span>
+                &nbsp;&nbsp;<span class="gold">"Web Development"</span>,
+              </div>
+
+              <div>
+                <span class="muted-code">05</span>
+                &nbsp;&nbsp;<span class="gold">"Problem Solving"</span>
+              </div>
+
+              <div>
+                <span class="muted-code">06</span>
+                ];
+              </div>
+
+              <div>
+                <span class="muted-code">07</span>
+              </div>
+
+              <div>
+                <span class="muted-code">08</span>
+                status =
+                <span class="green">"ready to build"</span>;
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card float-one">
+            <span class="mini-icon">⌁</span>
+
+            <div>
+              <small>Currently learning</small>
+              <strong>Software Engineering</strong>
+            </div>
+          </div>
+
+          <div class="floating-card float-two">
+            <span class="mini-icon">✦</span>
+
+            <div>
+              <small>HackEd Norwich</small>
+              <strong>Runner-up · 2026</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+        class="container tech-strip reveal delay-2"
+        aria-label="Technology stack"
+      >
+        <span>JAVA</span>
+        <i>•</i>
+
+        <span>JAVASCRIPT</span>
+        <i>•</i>
+
+        <span>SQL</span>
+        <i>•</i>
+
+        <span>C#</span>
+        <i>•</i>
+
+        <span>HTML/CSS</span>
+        <i>•</i>
+
+        <span>UNITY</span>
+        <i>•</i>
+
+        <span>GIT</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section-pad">
+      <div class="container about-grid">
+
+        <div class="section-intro reveal">
+          <p class="eyebrow">ABOUT ME</p>
+
+          <h2>
+            Learning fast.<br />
+            Building faster.
+          </h2>
+        </div>
+
+        <div class="about-content reveal delay-1">
+          <p class="about-lead">
+            My strongest experience comes from building things — academic
+            projects, team projects and personal experiments that force me
+            to solve real problems.
+          </p>
+
+          <div class="about-columns">
+            <p>
+              I enjoy taking a requirement, breaking it down, writing the
+              code, debugging what goes wrong and improving the result until
+              it works cleanly.
+            </p>
+
+            <p>
+              I'm building a foundation across software engineering, web
+              development, databases and game development while looking for
+              my first professional opportunity in tech.
+            </p>
+          </div>
+
+          <div class="about-links">
+            <a
+              href="https://www.linkedin.com/in/joshua-ojabo-a41176327"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a href="mailto:joshuaojabo7@gmail.com">
+              Email me ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section-pad">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+
+            <h2>
+              Projects that show<br />
+              how I think.
+            </h2>
+          </div>
+
+          <a
+            class="inline-link"
+            href="https://github.com/joshojabs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View all on GitHub ↗
+          </a>
+        </div>
+
+        <!-- GLUCA -->
+        <article class="project-feature reveal">
+          <div class="project-copy">
+
+            <div class="project-number">
+              01 / FEATURED
+            </div>
+
+            <div class="project-badges">
+              <span>Backend</span>
+              <span>API Integration</span>
+              <span>72 Hours</span>
+              <span>Barcode Scanning</span>
+            </div>
+
+            <h3>Gluca</h3>
+
+            <p>
+              A diabetes-management web application built in 72 hours to help
+              users track blood glucose levels and receive personalised meal
+              recommendations.
+              I primarily worked on the backend, integrating Spoonacular and
+              Open Food Facts APIs for nutritional analysis and recommendation
+              logic.
+
+              I also contributed to frontend development, barcode-scanning
+              functionality, GitHub repository setup and team collaboration.
+            </p>
+
+            <div class="project-result">
+              <span>Result</span>
+
+              <strong>
+                Runner-up at HackEd Norwich 2026
+              </strong>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/joshojabs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore project <span>↗</span>
+            </a>
+          </div>
+
+          <div class="project-art gluca-photo-wrap">
+            <img
+              class="gluca-photo"
+              src="assets/gluca-showcase.png"
+              alt="Gluca logo, HackEd Norwich team photo and runner-up certificate"
+            />
+
+            <div class="photo-caption">
+              <span>HackEd Norwich 2026</span>
+              <strong>Runner-up</strong>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+
+          <!-- SLCAS -->
+          <article class="project-card reveal">
+
+            <div class="project-card-top">
+              <span class="project-number">02</span>
+              <span class="card-icon">⌘</span>
+            </div>
+
+            <div class="mini-window library-window">
+              <div class="mini-window-bar">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+
+              <div class="library-ui">
+                <div class="lib-sidebar"></div>
+
+                <div class="lib-main">
+                  <div class="lib-line wide"></div>
+                  <div class="lib-line"></div>
+
+                  <div class="lib-cards">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+
+              <p class="card-category">
+                JAVASCRIPT · DATA STRUCTURES · ALGORITHMS
+              </p>
+
+              <h3>
+                Smart Library Circulation & Automation System
+              </h3>
+
+              <p>
+                A fully interactive library management application built for
+                my COS 202 Data Structures & OOP project.
+
+                It includes item management, borrowing and returns,
+                reservation queues, overdue tracking, admin analytics,
+                Linear Search O(n), Merge Sort O(n log n), and stack-based
+                LIFO action history with undo functionality.
+              </p>
+
+              <div class="project-buttons">
+
+                <a
+                  class="project-button primary-project-button"
+                  href="https://slcas.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo ↗
+                </a>
+
+                <a
+                  class="project-button"
+                  href="https://github.com/joshojabs/slcas"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Code ↗
+                </a>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ADSE MIND GAMES -->
+          <article class="project-card reveal delay-1">
+
+            <div class="project-card-top">
+              <span class="project-number">03</span>
+              <span class="card-icon">✦</span>
+            </div>
+
+            <div class="mini-window game-window">
+              <div class="game-grid">
+                <div class="game-tile t1">?</div>
+                <div class="game-tile t2">+</div>
+                <div class="game-tile t3">★</div>
+                <div class="game-tile t4">3</div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <p class="card-category">
+                HTML · CSS · JAVASCRIPT
+              </p>
+
+              <h3>ADSE Mind Games</h3>
+
+              <p>
+                An interactive browser-based quiz and game experience with
+                levels, scoring, animation and user interaction.
+              </p>
+
+              <a
+                class="card-link"
+                href="https://adse-mind-games.vercel.app/index.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live demo ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- UNITY GAME -->
+          <article class="project-card reveal delay-2">
+
+            <div class="project-card-top">
+              <span class="project-number">04</span>
+              <span class="card-icon">△</span>
+            </div>
+
+            <div class="mini-window unity-window">
+              <div class="unity-scene">
+                <div class="platform p1"></div>
+                <div class="platform p2"></div>
+
+                <div class="player"></div>
+
+                <div class="coin c1"></div>
+                <div class="coin c2"></div>
+
+                <div class="flag"></div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <p class="card-category">
+                UNITY · C# · GAME DESIGN
+              </p>
+
+              <h3>
+                2D Obstacle Course
+              </h3>
+
+              <p>
+                A playable Unity project featuring collectible tokens,
+                hazards, finish logic and timer functionality.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section-pad">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">CAPABILITIES</p>
+
+            <h2>
+              Tools I use<br />
+              to build.
+            </h2>
+          </div>
+
+          <p class="section-note">
+            A growing toolkit built through coursework, personal projects
+            and hands-on problem solving.
+          </p>
+        </div>
+
+        <div class="skill-bento">
+
+          <article class="skill-card skill-large reveal">
+            <span class="skill-index">01</span>
+
+            <h3>
+              Programming
+            </h3>
+
+            <p>
+              Java · JavaScript · C · C# · SQL
+            </p>
+
+            <div
+              class="code-lines"
+              aria-hidden="true"
+            >
+              <i style="width:82%"></i>
+              <i style="width:64%"></i>
+              <i style="width:91%"></i>
+              <i style="width:48%"></i>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <span class="skill-index">02</span>
+
+            <h3>Web</h3>
+
+            <p>
+              HTML5 · CSS3 · Responsive layouts · Frontend fundamentals
+            </p>
+          </article>
+
+          <article class="skill-card reveal delay-2">
+            <span class="skill-index">03</span>
+
+            <h3>
+              Software Engineering
+            </h3>
+
+            <p>
+              OOP · Debugging · Testing · Problem solving · Software design
+            </p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-index">04</span>
+
+            <h3>Tools</h3>
+
+            <p>
+              Git · GitHub · VS Code · JDK · Microsoft SQL Server
+            </p>
+          </article>
+
+          <article class="skill-card skill-accent reveal delay-1">
+            <span class="skill-index">05</span>
+
+            <h3>
+              Game Development
+            </h3>
+
+            <p>
+              Unity · Unreal Engine · C# · Interactive systems
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements section-pad">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">
+              ACHIEVEMENTS
+            </p>
+
+            <h2>
+              Proof of progress.
+            </h2>
+          </div>
+
+          <p class="section-note">
+            A few milestones that show how I’m developing beyond coursework.
+          </p>
+        </div>
+
+        <div class="achievement-grid">
+
+          <article class="achievement-card reveal">
+            <span class="achievement-year">
+              2026
+            </span>
+
+            <h3>
+              HackEd Norwich — Runner-up
+            </h3>
+
+            <p>
+              Built Gluca with a new team in 72 hours and presented the
+              finished MVP to judges.
+            </p>
+          </article>
+
+          <article class="achievement-card reveal delay-1">
+            <span class="achievement-year">
+              2025
+            </span>
+
+            <h3>
+              UK Bebras — Merit
+            </h3>
+
+            <p>
+              Scored 75 in the Elite (16–19) Computational Thinking
+              Challenge.
+            </p>
+          </article>
+
+          <article class="achievement-card reveal delay-2">
+            <span class="achievement-year">
+              SQL
+            </span>
+
+            <h3>
+              HackerRank SQL Certificate
+            </h3>
+
+            <p>
+              Earned the SQL (Basic) certificate and continued practising
+              database problem solving.
+            </p>
+          </article>
+
+          <article class="achievement-card reveal">
+            <span class="achievement-year">
+              UEA
+            </span>
+
+            <h3>
+              Machine Learning Workshop
+            </h3>
+
+            <p>
+              Completed a hands-on University of East Anglia workshop
+              exploring AI and machine-learning fundamentals.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section
+      id="education"
+      class="education section-pad"
+    >
+      <div class="container education-grid">
+
+        <div class="education-intro reveal">
+          <p class="eyebrow">
+            EDUCATION
+          </p>
+
+          <h2>
+            Building the<br />
+            foundation.
+          </h2>
+
+          <p>
+            Three learning environments, one direction: becoming a strong
+            software engineer.
+          </p>
+        </div>
+
+        <div class="education-list">
+
+          <article class="education-item reveal">
+
+            <div class="edu-line">
+              <span>01</span>
+            </div>
+
+            <div>
+              <p class="edu-type">
+                B.SC. SOFTWARE ENGINEERING
+              </p>
+
+              <h3>
+                MIVA Open University
+              </h3>
+
+              <p>
+                Programming, computer science, mathematics, Java, databases
+                and application development.
+              </p>
+            </div>
+          </article>
+
+          <article class="education-item reveal delay-1">
+
+            <div class="edu-line">
+              <span>02</span>
+            </div>
+
+            <div>
+              <p class="edu-type">
+                ADVANCED DIPLOMA IN SOFTWARE ENGINEERING
+              </p>
+
+              <h3>
+                Aptech Computer Education
+              </h3>
+
+              <p>
+                Programming practices, HTML5, SQL Server, UI/UX and software
+                development principles.
+              </p>
+            </div>
+          </article>
+
+          <article class="education-item reveal delay-2">
+
+            <div class="edu-line">
+              <span>03</span>
+            </div>
+
+            <div>
+              <p class="edu-type">
+                COMPUTING / GAME PRODUCTION
+              </p>
+
+              <h3>
+                East Norfolk Sixth Form College
+              </h3>
+
+              <p>
+                Programming, software development, Unity and Unreal Engine
+                projects.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section
+      id="contact"
+      class="contact section-pad"
+    >
+      <div class="container contact-shell reveal">
+
+        <div class="contact-glow"></div>
+
+        <div>
+          <p class="eyebrow light">
+            LET'S CONNECT
+          </p>
+
+          <h2>
+            Looking for someone<br />
+            ready to grow?
+          </h2>
+
+          <p class="contact-copy">
+            I'm open to software engineering apprenticeships, internships
+            and junior developer opportunities.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+
+          <a
+            class="contact-main"
+            href="mailto:joshuaojabo7@gmail.com"
+          >
+            <span>Email me</span>
+            <strong>
+              joshuaojabo7@gmail.com
+            </strong>
+
+            <i>↗</i>
+          </a>
+
+          <div class="contact-small-grid">
+
+            <a href="tel:+447350160864">
+              <span>Phone</span>
+              <strong>07350 160864</strong>
+            </a>
+
+            <a
+              href="https://github.com/joshojabs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>GitHub</span>
+              <strong>@joshojabs ↗</strong>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/joshua-ojabo-a41176327"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>LinkedIn</span>
+              <strong>Joshua Ojabo ↗</strong>
+            </a>
+
+            <div>
+              <span>Location</span>
+              <strong>Gorleston, UK</strong>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-shell">
+      <span>
+        © 2026 Joshua Ojabo
+      </span>
+
+      <span>
+        Designed & built for the web.
+      </span>
+
+      <a href="#top">
+        Back to top ↑
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
