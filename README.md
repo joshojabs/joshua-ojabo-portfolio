@@ -1,6 +1,6 @@
 # Joshua Ojabo — Portfolio
 
-Standalone portfolio website with no Base44 dependency.
+Standalone portfolio website
 
 ## Files
 - `index.html`
